@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
  */
 public class SepBasicTypeConverts {
 
+	private SepBasicTypeConverts() {};
 	private static final Map<Class<?>, CanFromStringTypeMeta> canFromStringTypeMetas = new LinkedHashMap<Class<?>, CanFromStringTypeMeta>();
 	private static final Map<Class<?>, CanFromNullTypeMeta> canFromNullTypeMetas = new LinkedHashMap<Class<?>, CanFromNullTypeMeta>();
 
@@ -151,7 +152,7 @@ public class SepBasicTypeConverts {
 		 *             If an exception is thrown, it means this string cannot be
 		 *             parsed
 		 */
-		public Object fromThisString(String str) throws RuntimeException;
+		public Object fromThisString(String str);
 	}
 
 	private static class ShortType implements CanFromStringTypeMeta {
@@ -409,6 +410,7 @@ public class SepBasicTypeConverts {
 		if (matcher.find()) {
 			return matcher.group(1);
 		}
+		
 		return s;
 	}
 

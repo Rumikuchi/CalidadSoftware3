@@ -10,7 +10,7 @@ public class HelloWorld {
 
 	   public String getMessage() 
 	   {
-	      if (name == "") 
+	      if (name.equals("")) 
 	      {
 	         return "Hello!";
 	      }
