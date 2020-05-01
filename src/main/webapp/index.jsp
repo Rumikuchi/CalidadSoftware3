@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Trabajo</title>
+<head>
+  <title>Some relevant title</title>
+</head>
 <body color=green>
 <h1> Upated Welcome to the devops training </h1>
 <h1> updated content </h1>
